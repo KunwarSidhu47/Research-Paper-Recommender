@@ -1,0 +1,4 @@
+data/filtered_papers.csv filter=lfs diff=lfs merge=lfs -text
+data/paper_embeddings.npy filter=lfs diff=lfs merge=lfs -text
+data/*.csv filter=lfs diff=lfs merge=lfs -text
+data/*.npy filter=lfs diff=lfs merge=lfs -text

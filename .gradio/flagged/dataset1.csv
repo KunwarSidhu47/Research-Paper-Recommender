@@ -1,0 +1,102 @@
+query,author_filter,title_filter,output,timestamp
+computer vision,,,"'**Quantity Matters: Towards Assessing and Mitigating Number Hallucination
+  in Large Vision-Language Models**
+
+Large-scale vision-language models have demonstrated impressive skill in
+handling tasks that involve both areas. Nevertheless, these models frequently
+experience significant issues with generating inaccurate information, which is
+hallucination. In this study, we concentrate on a specific type of
+hallucination-number hallucination, referring to models incorrectly identifying
+the number of certain objects in pictures. We perform quantitative evaluations
+regarding number hallucination, showing it to be critical in major open-source
+large vision-language models. Furthermore, we utilizes two related tasks to
+conduct an in-depth analysis of number hallucination, revealing the severe
+inner and outer inconsistency among all tasks. Based on this examination, we
+devise a training approach aimed at improving consistency to reduce number
+hallucinations, which leads to an 8% enhancement in performance over direct
+finetuning methods. Our code and dataset will be released to the community.
+
+---
+
+**Canonical Correlation Inference for Mapping Abstract Scenes to Text**
+
+We describe a technique for structured prediction, based on canonical
+correlation analysis. Our learning algorithm finds two projections for the
+input and the output spaces that aim at projecting a given input and its
+correct output into points close to each other. We demonstrate our technique on
+a language-vision problem, namely the problem of giving a textual description
+to an ""abstract scene"".
+
+---
+
+**Plausible May Not Be Faithful: Probing Object Hallucination in
+  Vision-Language Pre-training**
+
+Large-scale vision-language pre-trained (VLP) models are prone to hallucinate
+non-existent visual objects when generating text based on visual information.
+In this paper, we systematically study the object hallucination problem from
+three aspects. First, we examine recent state-of-the-art VLP models, showing
+that they still hallucinate frequently, and models achieving better scores on
+standard metrics (e.g., CIDEr) could be more unfaithful. Second, we investigate
+how different types of image encoding in VLP influence hallucination, including
+region-based, grid-based, and patch-based. Surprisingly, we find that
+patch-based features perform the best and smaller patch resolution yields a
+non-trivial reduction in object hallucination. Third, we decouple various VLP
+objectives and demonstrate that token-level image-text alignment and controlled
+generation are crucial to reducing hallucination. Based on that, we propose a
+simple yet effective VLP loss named ObjMLM to further mitigate object
+hallucination. Results show that it reduces object hallucination by up to 17.4%
+when tested on two benchmarks (COCO Caption for in-domain and NoCaps for
+out-of-domain evaluation).
+
+---
+
+**Prompting through Prototype: A Prototype-based Prompt Learning on
+  Pretrained Vision-Language Models**
+
+Prompt learning is a new learning paradigm which reformulates downstream
+tasks as similar pretraining tasks on pretrained models by leveraging textual
+prompts. Recent works have demonstrated that prompt learning is particularly
+useful for few-shot learning, where there is limited training data. Depending
+on the granularity of prompts, those methods can be roughly divided into
+task-level prompting and instance-level prompting. Task-level prompting methods
+learn one universal prompt for all input samples, which is efficient but
+ineffective to capture subtle differences among different classes.
+Instance-level prompting methods learn a specific prompt for each input, though
+effective but inefficient. In this work, we develop a novel prototype-based
+prompt learning method to overcome the above limitations. In particular, we
+focus on few-shot image recognition tasks on pretrained vision-language models
+(PVLMs) and develop a method of prompting through prototype (PTP), where we
+define $K$ image prototypes and $K$ prompt prototypes. In PTP, the image
+prototype represents a centroid of a certain image cluster in the latent space
+and a prompt prototype is defined as a soft prompt in the continuous space. The
+similarity between a query image and an image prototype determines how much
+this prediction relies on the corresponding prompt prototype. Hence, in PTP,
+similar images will utilize similar prompting ways. Through extensive
+experiments on seven real-world benchmarks, we show that PTP is an effective
+method to leverage the latent knowledge and adaptive to various PVLMs.
+Moreover, through detailed analysis, we discuss pros and cons for prompt
+learning and parameter-efficient fine-tuning under the context of few-shot
+learning.
+
+---
+
+**VIPHY: Probing ""Visible"" Physical Commonsense Knowledge**
+
+In recent years, vision-language models (VLMs) have shown remarkable
+performance on visual reasoning tasks (e.g. attributes, location). While such
+tasks measure the requisite knowledge to ground and reason over a given visual
+instance, they do not, however, measure the ability of VLMs to retain and
+generalize such knowledge. In this work, we evaluate their ability to acquire
+""visible"" physical knowledge -- the information that is easily accessible from
+images of static scenes, particularly across the dimensions of object color,
+size and space. We build an automatic pipeline to derive a comprehensive
+knowledge resource for calibrating and probing these models. Our results
+indicate a severe gap between model and human performance across all three
+tasks. Furthermore, our caption pretrained baseline (CapBERT) significantly
+outperforms VLMs on both size and spatial tasks -- highlighting that despite
+sufficient access to ground language with visual modality, they struggle to
+retain such knowledge. The dataset and code are available at
+https://github.com/Axe--/ViPhy .
+
+---",2025-07-27 02:11:07.792547
